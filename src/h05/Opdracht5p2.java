@@ -12,7 +12,7 @@ public class Opdracht5p2 extends Applet{
 
     public void init() {
 //waarde
-        valerie = 500;
+        valerie = 400;
         hans = 200;
         jeroen = 100;
         vkleur = Color.pink;
@@ -23,7 +23,7 @@ public class Opdracht5p2 extends Applet{
 
     }
 
-
+// waarde > "Color.grey
     public void paint(Graphics g) {
         setSize(600,600);
         setBackground(Color.black);

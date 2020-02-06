@@ -14,6 +14,7 @@ public class Opdracht2p2 extends Applet {
     public void paint(Graphics g) {
         g.setColor(Color.yellow);
         g.drawString("Marley", 50, 60 );
+        g.setColor(Color.red);
         g.drawString("Mutange", 50,70);
     }
 
