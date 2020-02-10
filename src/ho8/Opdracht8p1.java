@@ -24,7 +24,7 @@ public class Opdracht8p1 extends Applet {
     public void paint(Graphics g) {
         setSize(400,400);
         setBackground(Color.white);
-        g.drawString("doet deze knop wel iets ?",50,50);
+        g.drawString("doet deze knopp wel iets ?",50,50);
 
     }
     class KnopListener implements ActionListener {
