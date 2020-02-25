@@ -1,35 +1,63 @@
-package ho8;
+
 
 import java.applet.Applet;
 import java.awt.*;
 import java.awt.event.*;
 
-public class Opdracht8p1 extends Applet {
-    Button knop;
-    String schermtekst;
+
+public class Opdracht8p1 extends Applet{
+    Button knop1;
+    Button knop2;
+    TextField tekstvak1, tekstvak2;
+    Label label;
+    String s;
+
+
+
 
     public void init() {
-        knop = new Button();
-        knop.setLabel("Click on me");
-        KnopListener kl = new KnopListener();
-        knop.addActionListener( kl );
-        add(knop);
+        knop1 = new Button("Ok");
+        knop1.addActionListener(new WerkListener());
+        knop2 = new Button("reset");
+        knop2.addActionListener(new CrewListener());
+        tekstvak1 = new TextField("",30);
+        label = new Label("schrijf iets");
+        add(knop1);
+        add(knop2);
+        add(tekstvak1);
+        add(label);
+        s = "";
+
 
 
 
 
     }
-
 
     public void paint(Graphics g) {
-        setSize(400,400);
-        setBackground(Color.white);
-        g.drawString("doet deze knoppn wel iets ?",50,50);
+
+        g.drawString("en nu kom het op beeld: " + s, 50,50);
+
+
+
+
 
     }
-    class KnopListener implements ActionListener {
-        public void actionPerformed( ActionEvent e ) {
-            schermtekst = "Ja, deze knop doet wel iets";
+
+    class WerkListener implements ActionListener {
+        public void actionPerformed(ActionEvent e) {
+           s = tekstvak1.getText();
+           repaint();
+
+
+        }
+    }
+    class CrewListener implements ActionListener {
+        public void actionPerformed(ActionEvent e) {
+         tekstvak1.setText("");
+            repaint();
+
+
         }
     }
 }
