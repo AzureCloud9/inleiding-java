@@ -3,36 +3,28 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class Opdracgr8p2 extends Applet{
-    Button man,vrouw,potman,potvrouw;
-    TextField man1,vrouw1, potman1,potvrouw1,totaal;
+public class Opdracgr8p2 extends Applet {
+    Button man, vrouw, potman, potvrouw;
+    TextField man1, vrouw1, potman1, potvrouw1, totaal;
     Label label;
-    int aantalMan,aantalVrouw, aantalJongens,aantalMeisjes,test;
-
-
+    int aantalMan, aantalVrouw, aantalJongens, aantalMeisjes, test;
 
 
     public void init() {
         man = new Button("Man");
         man.addActionListener(new ManListener());
-        man1 = new TextField("0");
+        man1 = new TextField("");
         vrouw = new Button("Vrouw");
         vrouw.addActionListener(new VrouwListener());
-        vrouw1 = new TextField("0");
+        vrouw1 = new TextField("");
         potman = new Button("Pot Man");
         potman.addActionListener(new PotmanListener());
-        potman1 = new TextField("0");
+        potman1 = new TextField("");
         potvrouw = new Button("Pot Vrouw");
         potvrouw.addActionListener(new PotvrouwListener());
-        potvrouw1 = new TextField("0");
+        potvrouw1 = new TextField("");
         totaal = new TextField("0");
         label = new Label("<  totaal");
-
-
-
-
-
-
 
 
         add(man1);
@@ -47,34 +39,27 @@ public class Opdracgr8p2 extends Applet{
         add(label);
 
 
-
-
-
-
-
-
+        aantalMan = 1;
+        aantalVrouw = 1;
+        aantalJongens = 1;
+        aantalMeisjes = 1;
+        test = 1;
 
 
     }
 
 
     public void paint(Graphics g) {
-
-        aantalMan++;
-        aantalJongens++;
-        aantalVrouw++;
-        aantalMeisjes++;
-
-
-
+        setSize(500, 500);
 
 
     }
 
     class ManListener implements ActionListener {
         public void actionPerformed(ActionEvent e) {
-            man1.setText("" + aantalMan );
-            totaal.setText(""+ aantalMan);
+            man1.setText("" + aantalMan++);
+            totaal.setText("" + test);
+
             repaint();
 
 
@@ -83,8 +68,9 @@ public class Opdracgr8p2 extends Applet{
 
     class VrouwListener implements ActionListener {
         public void actionPerformed(ActionEvent e) {
-            vrouw1.setText(""+ aantalVrouw );
-            totaal.setText(""+ aantalVrouw);
+            vrouw1.setText("" + aantalVrouw++);
+            totaal.setText("" + test++);
+
             repaint();
 
 
@@ -93,21 +79,25 @@ public class Opdracgr8p2 extends Applet{
 
     class PotmanListener implements ActionListener {
         public void actionPerformed(ActionEvent e) {
-            potman1.setText(""+ aantalJongens);
-            totaal.setText(""+ aantalJongens);
+            potman1.setText("" + aantalJongens++);
+            totaal.setText("" + test++);
+
             repaint();
 
 
         }
     }
+
     class PotvrouwListener implements ActionListener {
         public void actionPerformed(ActionEvent e) {
-            potvrouw1.setText(""+ aantalMeisjes);
-            totaal.setText(""+aantalMeisjes);
+            potvrouw1.setText("" + aantalMeisjes++);
+            totaal.setText("" + test++);
+
+
             repaint();
 
 
         }
     }
-}
 
+}
