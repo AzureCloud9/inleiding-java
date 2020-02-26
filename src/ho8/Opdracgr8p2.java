@@ -13,16 +13,16 @@ public class Opdracgr8p2 extends Applet {
     public void init() {
         man = new Button("Man");
         man.addActionListener(new ManListener());
-        man1 = new TextField("");
+        man1 = new TextField("0");
         vrouw = new Button("Vrouw");
         vrouw.addActionListener(new VrouwListener());
-        vrouw1 = new TextField("");
+        vrouw1 = new TextField("0");
         potman = new Button("Pot Man");
         potman.addActionListener(new PotmanListener());
-        potman1 = new TextField("");
+        potman1 = new TextField("0");
         potvrouw = new Button("Pot Vrouw");
         potvrouw.addActionListener(new PotvrouwListener());
-        potvrouw1 = new TextField("");
+        potvrouw1 = new TextField("0");
         totaal = new TextField("0");
         label = new Label("<  totaal");
 
