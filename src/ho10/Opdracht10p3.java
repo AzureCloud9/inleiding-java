@@ -15,17 +15,12 @@ public class Opdracht10p3 extends Applet {
 
     public void init() {
         tekstvak = new TextField("", 20);
-        tekstvak1 = new TextField("", 20);
         label = new Label("Type het maandnummer en druk op enter:");
-        label1 = new Label("Type het maandnummer en druk op enter:");
         tekstvak.addActionListener( new TekstvakListener() );
-        tekstvak1.addActionListener( new Tekstvak1Listener() );
         tekst = "";
-        tekst1 = "";
         add(label);
         add(label1);
         add(tekstvak);
-        add(tekstvak1);
     }
 
     public void paint(Graphics g) {
@@ -79,29 +74,12 @@ public class Opdracht10p3 extends Applet {
                     break;
                 case 12:
                     tekst = "December:" + " 31 dagen";
-                    break;
+                     break;
                 default:
                     tekst = "U hebt een verkeerd nummer ingetikt ..!";
                     break;
             }
             repaint();
-        }
-    }
-    class Tekstvak1Listener implements ActionListener{
-        public void actionPerformed(ActionEvent e) {
-            d = tekstvak1.getText();
-            jaartal = Integer.parseInt( d);
-            if ( (jaartal % 4 == 0 && !(jaartal % 100 == 0)) ||
-                    jaartal % 400 == 0 ) {
-                tekst1 = ""+ jaartal + " is een schrikkeljaar";
-                repaint();
-            }
-            else {
-                tekst1 = ""+ jaartal + " is geen schrikkeljaar";
-                repaint();
-            }
-            repaint();
-
         }
     }
 }
