@@ -1,6 +1,6 @@
 package ho8;
 
-import javax.xml.soap.Text;
+
 import java.applet.Applet;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -9,8 +9,8 @@ import java.awt.event.ActionListener;
 public class PraktijkOpdracht extends Applet {
 
     Button b1,b2,b3,b4;
-    TextField t1,t2,t3,t4;
-    Label l1,l2,l3,l4;
+    TextField t1,t2,t3;
+    Label l1,l2,l3;
 
 
     public void init() {
@@ -88,11 +88,8 @@ public class PraktijkOpdracht extends Applet {
 
             int n1 =Integer.parseInt(t1.getText());
             int n2 =Integer.parseInt(t2.getText());
+            t3.setText(String.valueOf(n1/n2));
 
-            if(e.getSource()==b1)
-            {
-                t3.setText(String.valueOf(n1/n2));
-            }
 
 
 
@@ -104,11 +101,7 @@ public class PraktijkOpdracht extends Applet {
 
             int n1 =Integer.parseInt(t1.getText());
             int n2 =Integer.parseInt(t2.getText());
-
-            if(e.getSource()==b2)
-            {
-                t3.setText(String.valueOf(n1*n2));
-            }
+            t3.setText(String.valueOf(n1*n2));
 
 
         }
@@ -119,11 +112,8 @@ public class PraktijkOpdracht extends Applet {
 
             int n1 =Integer.parseInt(t1.getText());
             int n2 =Integer.parseInt(t2.getText());
+            t3.setText(String.valueOf(n1-n2));
 
-            if(e.getSource()==b3)
-            {
-                t3.setText(String.valueOf(n1-n2));
-            }
 
 
         }
@@ -134,11 +124,8 @@ public class PraktijkOpdracht extends Applet {
 
             int n1 =Integer.parseInt(t1.getText());
             int n2 =Integer.parseInt(t2.getText());
+            t3.setText(String.valueOf(n1+n2));
 
-            if(e.getSource()==b4)
-            {
-                t3.setText(String.valueOf(n1+n2));
-            }
 
 
         }
