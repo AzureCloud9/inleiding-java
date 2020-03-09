@@ -58,7 +58,7 @@ public class Opdracgr8p2 extends Applet {
     class ManListener implements ActionListener {
         public void actionPerformed(ActionEvent e) {
             man1.setText("" + aantalMan++);
-            totaal.setText("" + test);
+            totaal.setText("" + test++);
 
             repaint();
 
