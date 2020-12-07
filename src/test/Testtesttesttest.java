@@ -1,4 +1,6 @@
 package test;
 
-public class Testtesttesttest {
+import java.applet.Applet;
+
+public class Testtesttesttest extends Applet {
 }
