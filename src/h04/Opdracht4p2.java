@@ -7,7 +7,6 @@ public class Opdracht4p2 extends Applet {
 
     public void init() {
     }
-''
     public void paint(Graphics g) {
         setBackground(Color.blue);
         g.setColor(Color.yellow);
