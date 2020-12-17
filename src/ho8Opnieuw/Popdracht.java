@@ -12,7 +12,6 @@ public class Popdracht extends Applet {
     TextField t1,t2,t3;
     Label l1,l2,l3;
 
-
     public void init() {
         b1 = new Button("/");
         b1.addActionListener(new DivideListener());

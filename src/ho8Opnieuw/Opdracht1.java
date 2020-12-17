@@ -75,8 +75,6 @@ public class Opdracht1 extends Applet {
             totaal.setText("" + test++);
 
             repaint();
-
-
         }
     }
 

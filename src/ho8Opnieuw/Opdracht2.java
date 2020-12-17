@@ -15,8 +15,6 @@ public class Opdracht2 extends Applet {
     String s;
 
 
-
-
     public void init() {
         knop1 = new Button("Ok");
         knop1.addActionListener(new WerkListener());
