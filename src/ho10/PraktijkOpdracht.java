@@ -37,7 +37,7 @@ public class PraktijkOpdracht extends Applet {
         }
 
 
-    }
+      }
 
     class KoListener implements ActionListener {
         public void actionPerformed(ActionEvent e) {
