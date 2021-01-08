@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="37b5e605-e735-46c3-8a05-560120022e78" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Ho10Opieuw/Opdracht1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Ho10Opieuw/Opdracht2.java" afterDir="false" />
+    <list default="true" id="37b5e605-e735-46c3-8a05-560120022e78" name="Default Changelist" comment=".">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ho10/PraktijkOpdracht.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ho8Opnieuw/Opdracht3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ho8Opnieuw/Opdracht3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/Testtest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/Testtest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,32 +30,12 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
-  <component name="RunManager" selected="Applet.Opdracht2">
-    <configuration name="Opdracht1 (1)" type="Applet" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Ho10Opieuw.Opdracht1" />
-      <module name="inleiding-java" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Opdracht1" type="Applet" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Opdracht1" />
-      <module name="inleiding-java" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Opdracht10p1" type="Applet" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Opdracht10p1" />
-      <module name="inleiding-java" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Opdracht10p2" type="Applet" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Opdracht10p2" />
+  <component name="RunManager" selected="Applet.PraktijkOpdracht">
+    <configuration name="Opdracht1 (2)" type="Applet" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Ho8.Opdracht1" />
       <module name="inleiding-java" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -68,13 +48,34 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Opdracht4" type="Applet" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ho10.Opdracht4" />
+      <module name="inleiding-java" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Opdracht5" type="Applet" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ho10.Opdracht5" />
+      <module name="inleiding-java" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PraktijkOpdracht" type="Applet" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ho10.PraktijkOpdracht" />
+      <module name="inleiding-java" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Applet.PraktijkOpdracht" />
+        <item itemvalue="Applet.Opdracht5" />
+        <item itemvalue="Applet.Opdracht4" />
+        <item itemvalue="Applet.Opdracht1 (2)" />
         <item itemvalue="Applet.Opdracht2" />
-        <item itemvalue="Applet.Opdracht1" />
-        <item itemvalue="Applet.Opdracht10p2" />
-        <item itemvalue="Applet.Opdracht1 (1)" />
-        <item itemvalue="Applet.Opdracht10p1" />
       </list>
     </recent_temporary>
   </component>
@@ -143,7 +144,28 @@
       <option name="project" value="LOCAL" />
       <updated>1608209415927</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary=".">
+      <created>1608210338410</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1608210338410</updated>
+    </task>
+    <task id="LOCAL-00010" summary=".">
+      <created>1610012527232</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1610012527232</updated>
+    </task>
+    <task id="LOCAL-00011" summary=".">
+      <created>1610013687886</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1610013687886</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
