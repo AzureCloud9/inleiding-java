@@ -13,7 +13,7 @@ public class Opdracht6 extends Applet {
 
     public void paint(Graphics g) {
 
-        int a = 0;
+         int a = 0;
         int b = 100;
         int c = 100;
         int hoog = 15;

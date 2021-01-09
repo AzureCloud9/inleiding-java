@@ -17,7 +17,7 @@ public class Opdracht1 extends Applet {
         int c = 20;
         while (a < 10){
             g.drawLine(b,c,50,c);
-            c += 20;
+             c += 20;
             a++;
         }
 

@@ -16,7 +16,7 @@ public class Opdracht3 extends Applet {
         int c = 1;
         int b = 100;
         for (int d = 1; d < 30; d+=c ){
-            g.drawString(""+d, a, b);
+             g.drawString(""+d, a, b);
             a += 20;
             c ++;
         }

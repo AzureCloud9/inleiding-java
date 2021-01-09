@@ -29,6 +29,6 @@ public class Opdracht8 extends Applet {
             breed += 20;
             hoog +=20;
             a++;
-        }
+         }
     }
 }

@@ -19,7 +19,7 @@ public class Opdracht5 extends Applet {
 
         while(a < 6){
             g.fillRect(b, c, breed, hoog);
-            a++;
+             a++;
             b += 10;
             c += 10;
         }
