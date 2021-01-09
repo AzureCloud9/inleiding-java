@@ -27,7 +27,7 @@ public class Opdracht7 extends Applet {
             g.drawOval(b,c,breed,hoog);
             b-= 5;
             c-= 5;
-             breed +=10;
+            breed +=10;
             hoog += 10;
             a++;
         }
