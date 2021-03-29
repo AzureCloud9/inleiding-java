@@ -48,9 +48,16 @@
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
-  <component name="RunManager" selected="Applet.Opdracht3">
+  <component name="RunManager" selected="Applet.Opdracht1">
     <configuration name="Oefenen" type="Applet" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Ho13.Oefenen" />
+      <module name="inleiding-java" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Opdracht1" type="Applet" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Ho13.Opdracht1" />
       <module name="inleiding-java" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -77,20 +84,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Opdracht4p1" type="Applet" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Opdracht4p1" />
-      <module name="inleiding-java" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Applet.Opdracht1" />
         <item itemvalue="Applet.Opdracht3" />
         <item itemvalue="Applet.Opdracht2" />
         <item itemvalue="Applet.Oefenen" />
         <item itemvalue="Applet.Opdracht1opnieuw" />
-        <item itemvalue="Applet.Opdracht4p1" />
       </list>
     </recent_temporary>
   </component>
