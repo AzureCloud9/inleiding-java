@@ -2,10 +2,8 @@ package Ho12;
 
 import java.applet.Applet;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 
-public class Opdracht1 extends Applet {
+public class Opdracht1opnieuw extends Applet {
     double [] Salaris = {1,2,3,4,5,6,7,8,9,10,};
     int y = 20;
     double total,gem;
@@ -13,13 +11,8 @@ public class Opdracht1 extends Applet {
 
 
     public void init() {
-        total = 0;
+        berekenGemiddelde(Salaris);
 
-        for (int a = 0; a < Salaris.length; a++){
-            total = total + Salaris[a];
-
-        }
-        gem = total / Salaris.length;
 
 
     }
@@ -32,11 +25,19 @@ public class Opdracht1 extends Applet {
             y+=20;
         }
 
+    }
+
+    double berekenGemiddelde(double[] list){
+        total = 0;
+
+        for (int a = 0; a < list.length; a++){
+            total = total + Salaris[a];
+
+        }
+        gem = total / Salaris.length;
+        return gem;
 
 
     }
 
 }
-
-
-

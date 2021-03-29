@@ -8,48 +8,44 @@ import java.lang.reflect.Array;
 import java.util.Arrays;
 
 public class Opdracht3 extends Applet {
+    TextField tekstvak [] = new TextField[5];
+    Button knop;
+    double [] nummers = new double[5];
 
-    Color boomStam;
+
 
     public void init() {
-        setSize(1200, 800);
-        boomStam = new Color(139, 69, 19);
+
+
+        for (int a = 0; a< tekstvak.length; a++){
+            tekstvak[a] = new TextField("",10);
+            add(tekstvak[a]);
+        }
+        knop = new Button("OK");
+        add(knop);
+        knop.addActionListener( new KnopListener() );
+
     }
+
 
     public void paint(Graphics g) {
-        boomTekenen(g, 250, 300);
     }
 
-    void boomTekenen(Graphics g, int x, int y) {
-        //Boomstam kleur (bruin)
 
-
-        for (int j = 1; j < 4; j++) {
-
-            for (int i = 0; i < 5; i++) {
-
-                tekenBoom(g, x, y);
-
-                x += 100;
+    class KnopListener implements ActionListener{
+        public void actionPerformed(ActionEvent e) {
+            for (int a = 0; a< tekstvak.length; a++){
+                nummers[a] = Integer.parseInt(tekstvak[a].getText());
             }
-            // elke keer gaat de y 100 pixels omlaag
-            y += 100;
+            Arrays.sort(nummers);
 
-            // hier zet ik de x terug op zijn plek en daarna krijgt het 50 pixels erbij zodat het opschuift
-            x = 250 + 50 * j;
+            for (int a = 0; a< nummers.length; a++){
+                tekstvak[a].setText(String.valueOf(nummers[a]));
+            }
+
+
+
         }
-
-    }
-
-    void tekenBoom(Graphics g, int x, int y) {
-
-        //Boomstam
-        g.setColor(boomStam);
-        g.fillRect(x, y, 15, 50);
-
-        //Boomkruin
-        g.setColor(Color.green);
-        g.fillOval(x - 25, y - 35, 65, 40);
     }
 
 }
